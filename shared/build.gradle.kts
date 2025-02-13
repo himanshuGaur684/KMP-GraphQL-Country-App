@@ -53,9 +53,6 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtime.compose)
             implementation(libs.androidx.lifecycle.viewmodel)
 
-            // Paging
-            implementation(libs.paging.common)
-
             // KMP Observable ViewModel
             api(libs.kmp.observableviewmodel.core)
 
