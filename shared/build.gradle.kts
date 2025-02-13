@@ -69,6 +69,19 @@ kotlin {
     }
 }
 
+apollo{
+    service("service"){
+
+        packageName.set("dev.himanshu.graphqlcountryapp")
+
+        introspection {
+            endpointUrl.set("https://countries.trevorblades.com/")
+            schemaFile.set(file("src/commonMain/graphql/schema.graphqls"))
+        }
+    }
+}
+
+
 android {
     namespace = "dev.himanshu.graphqlcountryapp"
     compileSdk = 35
